@@ -24,7 +24,7 @@ data.columns = ["area","bedrooms","bathrooms","stories","mainroad",
                 "parking","prefarea","price"]
 
 
-data = data.apply(pd.to_numeric,errors='ignore')
+data = data.apply(pd.to_numeric,errors='coerce')
 
 
 st.write("Columns:", data.columns.tolist())
